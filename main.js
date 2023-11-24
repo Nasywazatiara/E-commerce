@@ -42,6 +42,7 @@ const divProduk = document.getElementsByClassName("div-produk");
     });
   });
 };
+ambilData();
 
 // Fungsi untuk memperbarui jumlah total keranjang
 const updateCartCount = () => {
@@ -116,4 +117,3 @@ searchBar.addEventListener("keyup", (e) => {
     `;
   });
 });
-ambilData();
