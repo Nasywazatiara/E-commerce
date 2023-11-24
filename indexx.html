@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-gray-700 p-3 w-full flex justify-between text-white">
+      <!-- Home -->
+      <div>
+        <a href="#">Home</a>
+      </div>
+      <div>
+        <input
+          type="text"
+          placeholder="Cari barang Anda..."
+          class="searchbar px-4 py-1 text-sky-500 w-96 rounded-lg"
+        />
+      </div>
+     <!-- shooping Cart Link -->
+      <div>
+        <a href="#" class="tampil-keranjang">
+          <span class="cart_count">0</span> Keranjang</a
+        >
+      </div>
+    </nav>
+
+    <!-- Product Gird Section -->
+    <div class="grid grid-cols-3 gap-10 m-5 div-produk"></div>
+
+    <!-- Cart Modal Section -->
+    <div class="absolute inset-0 flex justify-center items-center modal hidden">
+      <!-- Modal Content -->
+      <div class="bg-gray-500 p-5 w-full m-32 rounded text-white">
+        <!-- Modal Header -->
+        <div class="flex justify-between items-center">
+          <!-- Title of the modal -->
+          <div class="font-bold text-xl">Keranjang Anda</div>
+          <!-- Close button for the modal -->
+          <div class="font-bold text-xl hover:cursor-pointer btn-tutup">
+            TUTUP
+          </div>
+        </div>
+
+        <div class="keranjang-anda grid grid-cols-4 text-black gap-5"></div>
+      </div>
+    </div>
+
+    <!-- External Dependencies: Tailwind CSS Library and Custom JavaScript File -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="main.js"></script> -->
+    <script src="main.js"></script>
+  </body>
+</html>
